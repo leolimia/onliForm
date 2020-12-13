@@ -1,0 +1,15 @@
+<!--como envio los datos, ngSubmit entre pareentesis que es una funcion y "" el nombre de  la funcion que se llama cuando hago el submit; el .value me recoge los datos en formato JSON   -->
+<form [formGroup]="signupForm" (ngSubmit)="enviar(signupForm.value)">
+    <label> User:</label>
+    <!--le pido con formcontrolname lo que voy a pasar del label-->
+    <input formControlName="user" type="text" />
+    <br />
+    <label>Email:</label>
+    <input formControlName="email" type="email" />
+    <br />
+    <label>Password: </label>
+    <input formControlName="password" type="password">
+    <br />
+    <!--signupForm.invalid= hasta que estos requerimientos no se den no se pondra valido el boton-->
+    <button [disabled]="signupForm.invalid" type="submit">Registration</button>
+</form>

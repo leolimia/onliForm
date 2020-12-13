@@ -1,0 +1,14 @@
+form{
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: aquamarine;
+    border: 3px solid green;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+button{
+    margin-left: 30%;
+}
